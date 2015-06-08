@@ -31,6 +31,12 @@
     <%= f.label :actor_id %><br>
     <%= f.collection_select :actor_id, Actor.all, :id, :name %>
   </div>
+  <div class=”field”>
+    <%= f.label :cover %><br>
+    <%= f.file_field :cover %>
+  </div>
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
