@@ -27,7 +27,7 @@
 
 <p>
 <strong>Movie Cover</strong>
-<%= image_tag(movie.cover_url, width: 200) if @movie.cover.present? %>
+<%= image_tag(@movie.cover_url, width: 200) if @movie.cover.present? %>
 </p>
 
 
